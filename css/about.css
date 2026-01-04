@@ -1,0 +1,32 @@
+h2 {
+  font-size: 28px;
+  font-style: italic;
+  /* padding-left: 2em; */
+}
+
+svg {
+  margin-top: 5px;
+}
+
+p a {
+  color: var(--lines-color);
+  text-decoration: underline;
+}
+
+@media (width < 675px) {
+  .grid_2 {
+    grid-template-columns: 1fr;
+  }
+
+  .mypic {
+    grid-row: 1;
+  }
+
+  article {
+    grid-row: 2;
+  }
+
+  svg {
+    max-height: 350px;
+  }
+}

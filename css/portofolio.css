@@ -1,0 +1,180 @@
+.portcta {
+  background-color: var(--bg-color);
+  border: 7px var(--lines-color) solid;
+  margin: 15px 7px 15px 7px;
+  transition: 0.3s;
+  height: 480px;
+  flex: 0 1 300px; /* width ~300px, can shrink a little */
+  width: 400px;
+  margin: 15px 7px;
+  box-shadow: var(--shadow-color);
+}
+
+.portcta svg {
+  height: 65px;
+  width: auto;
+}
+
+/* main p {
+  text-align: center;
+} */
+
+svg {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 20px;
+}
+
+.tcta {
+  display: inline-block;
+  border: 7px var(--lines-color) solid;
+  background-color: var(--bg-color);
+  color: var(--lines-color);
+  font-family: var(--cta-font);
+  font-size: var(--cta-size);
+  transition: 0.35s;
+  box-shadow: var(--shadow-color);
+  margin-bottom: 15px;
+  /* margin-top: 30xpx; */
+}
+
+.tcta:hover {
+  background-color: var(--lines-color);
+  color: var(--bg-color);
+}
+
+.close {
+  padding: 0px 8px 3px 8px;
+}
+
+.tpics {
+  filter: grayscale(1);
+  display: block;
+  margin: auto;
+  transition: 0.4s;
+  margin-top: 15px;
+  width: 93%;
+  height: auto;
+  border: 3px var(--lines-color) solid;
+  place-self: middle;
+  box-shadow: var(--pic-shadow);
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.tpics:hover {
+  filter: grayscale(0);
+  width: 95%;
+}
+
+.projectinfo {
+  padding: 1rem;
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+  place-self: center;
+  border: 7px var(--lines-color) solid;
+  background-color: var(--bg-color);
+  transition: all 0.35s ease;
+}
+
+.adjust {
+  transform: scale(0.96);
+}
+
+.adjust2 {
+  transform: scale(0.85);
+}
+
+.btnpadding {
+  padding: 5px;
+}
+
+.projectinfo::backdrop {
+  background: rgba(0, 0, 0, 0.55);
+}
+
+@media (width < 675px) {
+  .popovergrid {
+    display: flex;
+    flex-direction: column; /* stacked */
+    gap: 15px;
+    align-items: center;
+  }
+  .portcta {
+    height: 5em;
+  }
+
+  .grid_3_1,
+  .grid_1_3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  h2 {
+    margin-bottom: 15px;
+  }
+
+  .portcta:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+  }
+
+  .resume {
+    align-self: center;
+  }
+}
+
+@media (width > 675px) {
+  .popovergrid {
+    display: flex;
+    flex-direction: row; /* horizontal row */
+    flex-wrap: nowrap; /* prevent wrapping */
+    gap: 15px; /* spacing between buttons */
+    justify-content: flex-start;
+    align-items: stretch; /* all buttons same height */
+  }
+
+  .resume {
+    height: 140px; /* must match grid row */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+  .order {
+    order: +1;
+  }
+
+  /* .grid_1_3,
+  .grid_3_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  .grid_1_3,
+  .grid_3_1 {
+    display: grid;
+    grid-template-rows: 140px 1fr; /* text row + icon row */
+    justify-items: center;
+    align-items: start;
+  }
+
+  .grid_1_3 svg,
+  .grid_3_1 svg {
+    align-self: end;
+    margin-top: 8em;
+  }
+
+  /* .portcta {
+    width: 320px;
+  } */
+
+  .portcta:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+  }
+}
