@@ -39,6 +39,19 @@ svg {
   /* margin-top: 30xpx; */
 }
 
+.process {
+  display: inline-block;
+  border: 4px var(--lines-color) solid;
+  background-color: var(--bg-color);
+  color: var(--lines-color);
+  font-family: var(--cta-font);
+  font-size: 20px;
+  transition: 0.35s;
+  box-shadow: var(--shadow-color);
+  margin-bottom: 10px;
+  /* margin-top: 30xpx; */
+}
+
 .tcta:hover {
   background-color: var(--lines-color);
   color: var(--bg-color);
