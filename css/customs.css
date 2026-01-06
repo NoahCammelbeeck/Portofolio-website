@@ -37,7 +37,7 @@
   --shadow-color: 0px 2px 20px rgba(255, 155, 255, 0.37);
   --h1-shadow: 0px 2px 25px rgba(255, 155, 255, 0.54);
   --h3-shadow: 2px 2px 10px rgba(255, 155, 255, 0.5);
-  --pic-shadow: 2xpx 3px 30px rgba(255, 155, 255, 0.55);
+  --pic-shadow: 2px 3px 30px rgba(255, 155, 255, 0.55);
 
   /* fonts */
   --h1-font: "orbitron";
